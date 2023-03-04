@@ -1,6 +1,6 @@
 <?php
 $user = 'root';
-$password = 'redhat';
+$password = '';
 $db = 'goals';
 $host = 'localhost';
 $port = 3306;
@@ -15,4 +15,8 @@ $success = mysqli_real_connect(
    $port
 );
 
+if (!$success) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connection successful!";
 ?>
