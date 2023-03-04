@@ -1,9 +1,9 @@
 <?php
 $user = 'root';
-$password = 'root';
+$password = '';
 $db = 'goals';
 $host = 'localhost';
-$port = 8889;
+$port = 3306;
 
 $link = mysqli_init();
 $success = mysqli_real_connect(
