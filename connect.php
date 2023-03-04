@@ -1,6 +1,6 @@
 <?php
 $user = 'root';
-$password = '';
+$password = 'redhat';
 $db = 'goals';
 $host = 'localhost';
 $port = 3306;
