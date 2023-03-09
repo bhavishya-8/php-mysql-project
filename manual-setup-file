@@ -1,7 +1,6 @@
 Manual Version for setup 
 -> Run the commands 
--> apt update && apt upgrade 
--> apt install docker 
+-> yum install docker 
 -> systemctl start docker 
 -> docker network create app_new_network --driver bridge 
 -> docker run -itd --name app -p 8080:80 -v /php-mysql-project:/var/www/html/ --network app_new_network ubuntu:14.04 
@@ -11,6 +10,7 @@ Now after running these commands follow the procedure in the "app" container:
 // going inside in the "app" container 
 -> docker attach app 
 After comming to the container install php and in ubuntu:14.04 we have php5 version present, so 
+-> apt update && apt upgrade
 -> apt install php5 Also for installing php server 
 -> apt install apache2 
 -> apachectl restart
